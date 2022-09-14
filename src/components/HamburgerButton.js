@@ -42,10 +42,10 @@ const MenuButton = styled.button`
       width: 40px;
     }
 
-    span:nth-of-type(2) {
-      opacity: 0;
-      pointer-events: none;
-    }
+    // span:nth-of-type(2) {
+    //   opacity: 0;
+    //   pointer-events: none;
+    // }
 
     span:nth-of-type(3) {
       transform: rotate(-45deg) translate(7px, -7px);
@@ -71,7 +71,7 @@ const HamburgerButton = () => {
 
   return (
     <MenuButton
-      className={isMenuOpen ? "active" : ""}
+      className={isMenuOpen ? "active" : " "}
       aria-label="Открыть главное меню"
       onClick={clickHandler}
     >

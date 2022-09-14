@@ -2,12 +2,17 @@ import { Outlet, NavLink } from "react-router-dom";
 import AnastasyaTrunova from "../../Images/AnastasyaTrunova.jpg";
 import {
   Image,
-  Container,
   Letter,
   ContainerAditional,
-  CardWrapper,
   Header,
+  CardWrapper,
+  List,
+  HeaderLang,
+  Contacts,
+  ListContacts,
 } from "./HomePage.style";
+import { AiFillLinkedin, AiTwotoneMail } from "react-icons/ai";
+import { BsTelephoneFill, BsTelegram } from "react-icons/bs";
 
 const HomePage = () => {
   return (
@@ -22,32 +27,41 @@ const HomePage = () => {
           technologies and deliver value to people.
         </Letter>
         <ContainerAditional>
-          <ul>
+          <List>
             <Header>Language skills</Header>
-            <li>English: A2</li>
-            <li>French: C1-C2</li>
-            <li>Ukrainian: native</li>
-          </ul>
+            <li>
+              <HeaderLang>English:</HeaderLang> A2
+            </li>
+            <li>
+              <HeaderLang>French:</HeaderLang> C1-C2
+            </li>
+            <li>
+              <HeaderLang>Ukrainian:</HeaderLang> native
+            </li>
+          </List>
 
           <Header>CONTACT INFORMATION</Header>
-          <p>
-            <ul>
-              <li>
-                <a href="tel:+380937657086">+38(093)765 70 86</a>
-                (Viber, Telegram, WhatsApp)
-              </li>
-              <li>
-                {" "}
-                <a href="mailto:anasty22@gmail.com">anasty22@gmail.com</a>
-              </li>
-              <li>
-                <a href="www.linkedin.com/in/anasty223">LinkedIn</a>
-              </li>
-              <li>
-                <a href="https://t.me/anasty223">Telegram</a>
-              </li>
-            </ul>
-          </p>
+          <p> (Viber, Telegram, WhatsApp)</p>
+          <ul>
+            <ListContacts>
+              <BsTelephoneFill />
+              <Contacts href="tel:+380937657086">+38(093)765 70 86</Contacts>
+            </ListContacts>
+            <ListContacts>
+              <AiTwotoneMail />
+              <Contacts href="mailto:anasty22@gmail.com">
+                anasty22@gmail.com
+              </Contacts>
+            </ListContacts>
+            <ListContacts>
+              <AiFillLinkedin />
+              <Contacts href="www.linkedin.com/in/anasty223">LinkedIn</Contacts>
+            </ListContacts>
+            <ListContacts>
+              <BsTelegram />
+              <Contacts href="https://t.me/anasty223">Telegram</Contacts>
+            </ListContacts>
+          </ul>
 
           <Header>Additional information</Header>
           <ul>

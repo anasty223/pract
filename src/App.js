@@ -22,10 +22,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Anastasya Trunova</h1>
+        {/* <h1>Anastasya Trunova</h1> */}
         <Routes>
           <Route path="/" element={<Layout />}>
-            {/* <Route index element={<HomePage />} /> */}
+            <Route index element={<HomePage />} />
             <Route path="home" element={<HomePage />} />
             <Route path="home/:id" element={<HomePage />}>
               <Route path="tech" element={<TechSkils />} />

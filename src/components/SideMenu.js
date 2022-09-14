@@ -1,24 +1,25 @@
 import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { MenuContext } from "../context/navState";
-import arrow from "../Images/arrow.svg";
 
 const Menu = styled.nav`
   position: absolute;
-  top: 0px;
+  // top: 115px;
   left: 0px;
-  bottom: 0px;
+  // bottom: 0px;
   z-index: 293;
   display: block;
-  width: 400px;
+  width: 200px;
+  height: 100vh;
   max-width: 100%;
   margin-top: 0px;
-  padding-top: 100px;
   padding-right: 0px;
   align-items: stretch;
-  background-color: #001698;
-  transform: translateX(-100%);
+  background-color: #a2a593;
+
+  transform: translateX(-120%);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
   ${(props) =>
@@ -28,30 +29,24 @@ const Menu = styled.nav`
     `}
 `;
 
-export const MenuLink = styled.a`
+export const SuperLink = styled(NavLink)`
   position: relative;
+  display: inline-block;
   display: block;
-  text-align: left;
   max-width: 100%;
-  padding-top: 25px;
-  padding-bottom: 25px;
   padding-left: 16%;
-  background-image: url(${arrow});
-  background-position: 88% 50%;
-  background-size: 36px;
   background-repeat: no-repeat;
   transition: background-position 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  text-decoration: none;
-  color: #fff;
-  font-size: 32px;
-  line-height: 120%;
-  font-weight: 500;
 
-  :hover {
-    background-position: 90% 50%;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 25px;
+  &.active {
+    color: #64694b;
   }
 `;
-
 export const SideMenu = ({ children }) => {
   const { isMenuOpen } = useContext(MenuContext);
 
@@ -65,10 +60,13 @@ SideMenu.propTypes = {
 SideMenu.defaultProps = {
   children: (
     <>
-      <MenuLink href="/">Главная</MenuLink>
-      <MenuLink href="/articles">Статьи</MenuLink>
-      <MenuLink href="/about">О сайте</MenuLink>
-      <MenuLink href="/contact">Контакт</MenuLink>
+      <SuperLink to="/home">Home</SuperLink>
+
+      <SuperLink to="/projects">Projects</SuperLink>
+
+      <SuperLink to="/education">Education</SuperLink>
+
+      <SuperLink to="/workexpirience">Work expirience</SuperLink>
     </>
   ),
 };

@@ -6,7 +6,7 @@ export const MenuContext = createContext({
   toggleMenu: () => {},
 });
 
-const NavState = ({ children }) => {
+export const NavState = ({ children }) => {
   const [isMenuOpen, toggleMenu] = useState(false);
 
   function toggleMenuMode() {
@@ -24,4 +24,4 @@ NavState.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default NavState;
+// export default NavState;

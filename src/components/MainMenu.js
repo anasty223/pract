@@ -7,7 +7,7 @@ import { SideMenu } from "./SideMenu";
 
 const Navbar = styled.div`
   display: flex;
-  position: fixed;
+  position: relative;
   left: 0;
   right: 0;
   box-sizing: border-box;
@@ -15,7 +15,7 @@ const Navbar = styled.div`
   max-width: 100%;
   margin: 0px;
   align-items: center;
-  background: #082bff none repeat scroll 0% 0%;
+  background: #64694b none repeat scroll 0% 0%;
   color: rgb(248, 248, 248);
   min-width: 0px;
   min-height: 0px;
@@ -40,7 +40,7 @@ const MainMenu = () => {
     <header ref={node}>
       <Navbar>
         <HamburgerButton />
-        <h1>Website</h1>
+        <h1>Anastasya Trunova</h1>
       </Navbar>
       <SideMenu />
     </header>
