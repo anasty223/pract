@@ -10,8 +10,12 @@ import {
   HeaderLang,
   Contacts,
   ListContacts,
+  ListContact,
+  Linktech,
+  ItemTech,
+  ListAdditional,
 } from "./HomePage.style";
-import { AiFillLinkedin, AiTwotoneMail } from "react-icons/ai";
+import { AiFillLinkedin, AiTwotoneMail, AiFillGithub } from "react-icons/ai";
 import { BsTelephoneFill, BsTelegram } from "react-icons/bs";
 
 const HomePage = () => {
@@ -42,7 +46,7 @@ const HomePage = () => {
 
           <Header>CONTACT INFORMATION</Header>
           <p> (Viber, Telegram, WhatsApp)</p>
-          <ul>
+          <ListContact>
             <ListContacts>
               <BsTelephoneFill />
               <Contacts href="tel:+380937657086">+38(093)765 70 86</Contacts>
@@ -61,20 +65,23 @@ const HomePage = () => {
               <BsTelegram />
               <Contacts href="https://t.me/anasty223">Telegram</Contacts>
             </ListContacts>
-          </ul>
+            <ListContacts>
+              <AiFillGithub />
+              <Contacts href="https://github.com/anasty223">GitHub</Contacts>
+            </ListContacts>
+          </ListContact>
 
           <Header>Additional information</Header>
-          <ul>
-            <li>
-              <NavLink to="tech">TECH SKILLS</NavLink>
-            </li>
-            <li>
-              <NavLink to="soft">SOFT SKILLS</NavLink>
-            </li>
-          </ul>
+          <ListAdditional>
+            <ItemTech>
+              <Linktech to="tech">TECH SKILLS</Linktech>
+            </ItemTech>
+            <ItemTech>
+              <Linktech to="soft">SOFT SKILLS</Linktech>
+            </ItemTech>
+            <Outlet />
+          </ListAdditional>
         </ContainerAditional>
-
-        <Outlet />
       </CardWrapper>
     </>
   );

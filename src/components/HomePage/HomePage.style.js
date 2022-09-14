@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const CardWrapper = styled.div`
   overflow: hidden;
@@ -47,12 +48,48 @@ export const Header = styled.h2`
 export const Contacts = styled.a`
   color: #64694b;
   margin-left: 5px;
+  &:hover,
+  :focus {
+    color: #a2a593;
+  }
 `;
 export const ListContacts = styled.li`
   display: flex;
   align-items: center;
   padding-bottom: 10px;
+
   &:last-child {
     padding-bottom: 0;
   }
+`;
+
+export const ListContact = styled.ul`
+  border-bottom: 2px solid #e0e1db;
+  text-align: start;
+  padding-bottom: 20px;
+`;
+export const Linktech = styled(NavLink)`
+  color: #64694b;
+  &.active {
+    color: #a2a593;
+    text-decoration: none;
+  }
+
+  &:hover,
+  :focus {
+    color: #a2a593;
+  }
+`;
+export const ItemTech = styled.li`
+  margin-bottom: 10px;
+  xt-align: start;
+
+  &:hover,
+  :focus {
+    color: #a2a593;
+  }
+`;
+export const ListAdditional = styled.ul`
+  text-align: start;
+  padding-bottom: 20px;
 `;
