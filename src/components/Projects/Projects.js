@@ -1,20 +1,19 @@
 import { Outlet, NavLink, useLocation } from "react-router-dom";
+import { Container, SuperLink } from "./Projects.style";
 
 const Projects = () => {
-  const location = useLocation();
-
   return (
-    <div>
-      <h2>Page Projects</h2>
-      <NavLink to="webstudio">WebStudio</NavLink>|
-      <NavLink to="ice-cream">Ice Cream </NavLink>|
-      <NavLink to="filmoteka">FILMOTEKA </NavLink>|
-      <NavLink to="mouvies">Mouvies </NavLink>|
-      <NavLink to="images-finder">Images finder </NavLink>|
-      <NavLink to="phonebook">PhoneBook</NavLink>
-      <NavLink to="kapusta">Kapusta</NavLink>
+    <Container>
+      <h2>My projects</h2>
+      <SuperLink to="webstudio">WebStudio</SuperLink>|
+      <SuperLink to="ice-cream">Ice Cream </SuperLink>|
+      <SuperLink to="filmoteka">Filmoteka </SuperLink>|
+      <SuperLink to="mouvies">Mouvies </SuperLink>|
+      <SuperLink to="images-finder">Images finder </SuperLink>|
+      <SuperLink to="phonebook">PhoneBook</SuperLink>|
+      <SuperLink to="kapusta">Kapusta</SuperLink>
       <Outlet />
-    </div>
+    </Container>
   );
 };
 

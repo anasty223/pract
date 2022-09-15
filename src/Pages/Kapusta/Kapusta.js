@@ -1,12 +1,19 @@
-export default function WebStudio() {
-  // const location = useLocation();
+import { Image, Container, Link, ContainerLink } from "../Style";
+import KapustaImg from "../../Images/Kapusta.jpg";
+export default function Phonebook() {
   return (
     <>
-      <a href="https://anasty223.github.io/goit-markup-hw-08/" target="_blank">
-        Link to site
-      </a>
-
-      <h3>React,Node.js</h3>
+      <Container>
+        <Image src={KapustaImg} alt="KapustaImg" />
+        <ContainerLink>
+          <button>
+            <Link href="https://kapustaapp.netlify.app/" target="_blanc">
+              Link to site
+            </Link>
+          </button>
+        </ContainerLink>
+        <h3>React-router-dom,propsTypes,react-redux,Node.js</h3>
+      </Container>
     </>
   );
 }

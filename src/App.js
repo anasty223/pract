@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage/HomePage";
 import Projects from "./components/Projects/Projects";
 import Layout from "./components/Layout/Layout";
@@ -14,9 +14,7 @@ import Mouvies from "./Pages/Mouvies/Mouvies";
 import Phonebook from "./Pages/Phonebook/Phonebook";
 import Kapusta from "./Pages/Kapusta/Kapusta";
 import Education from "./components/Education/Education";
-import WorkExpirience from "./Pages/WorkExpirience";
-import NavState from "./context/navState";
-import MainMenu from "./components/MainMenu";
+import WorkExpirience from "./components/WorkExpirience/WorkExpirience";
 
 class App extends React.Component {
   render() {
