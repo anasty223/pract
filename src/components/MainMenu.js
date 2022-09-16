@@ -4,6 +4,7 @@ import useOnClickOutside from "../hooks/onClickOutside";
 import { MenuContext } from "../context/navState";
 import HamburgerButton from "./HamburgerButton";
 import { SideMenu } from "./SideMenu";
+import { BsTelephoneFill, BsTelegram } from "react-icons/bs";
 
 const Navbar = styled.div`
   display: flex;
@@ -25,7 +26,14 @@ const Navbar = styled.div`
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
   z-index: 500;
 `;
-
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+const Link = styled.a`
+  width: 20px;
+`;
 const MainMenu = () => {
   const node = useRef();
   const { isMenuOpen, toggleMenuMode } = useContext(MenuContext);
@@ -40,7 +48,12 @@ const MainMenu = () => {
     <header ref={node}>
       <Navbar>
         <HamburgerButton />
-        <h1>Anastasya Trunova</h1>
+        <Container>
+          <h1>Anastasya Trunova</h1>
+          {/* <Link href="tel:+380937657086">
+            <BsTelephoneFill width="25px" heigt="25px" />
+          </Link> */}
+        </Container>
       </Navbar>
       <SideMenu />
     </header>

@@ -6,18 +6,17 @@ import { MenuContext } from "../context/navState";
 
 const Menu = styled.nav`
   position: absolute;
-  // top: 115px;
   left: 0px;
-  // bottom: 0px;
   z-index: 293;
   display: block;
-  width: 200px;
+  width: 220px;
   height: 100vh;
   max-width: 100%;
   margin-top: 0px;
   padding-right: 0px;
   align-items: stretch;
   background-color: #a2a593;
+  border-bottom-right-radius: 120px;
 
   transform: translateX(-120%);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -27,6 +26,10 @@ const Menu = styled.nav`
     css`
       transform: translateX(0);
     `}
+
+  @media (min-width: 1100px) {
+    transform: translateX(0%);
+  } ;
 `;
 
 export const SuperLink = styled(NavLink)`
@@ -34,7 +37,7 @@ export const SuperLink = styled(NavLink)`
   display: inline-block;
   display: block;
   max-width: 100%;
-  padding-left: 16%;
+  padding-left: 10%;
   background-repeat: no-repeat;
   transition: background-position 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
@@ -42,9 +45,11 @@ export const SuperLink = styled(NavLink)`
   padding: 12px;
   font-weight: 500;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 20px;
   &.active {
     color: #64694b;
+    text-decoration: underline;
+    font-size: 25px;
   }
 `;
 export const SideMenu = ({ children }) => {

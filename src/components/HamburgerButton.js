@@ -42,16 +42,20 @@ const MenuButton = styled.button`
       width: 40px;
     }
 
-    // span:nth-of-type(2) {
-    //   opacity: 0;
-    //   pointer-events: none;
-    // }
+    span:nth-of-type(2) {
+      opacity: 0;
+      pointer-events: none;
+    }
 
     span:nth-of-type(3) {
       transform: rotate(-45deg) translate(7px, -7px);
       width: 40px;
     }
   }
+
+  @media (min-width: 1100px) {
+    display: none;
+  } ;
 `;
 
 const Bar = styled.span`

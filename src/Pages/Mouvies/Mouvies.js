@@ -1,4 +1,4 @@
-import { Image, Container, Link, ContainerLink } from "../Style";
+import { Image, Container, Link, ContainerLink, Button, Heder } from "../Style";
 import MouviesImg from "../../Images/Mouvies.jpg";
 export default function Mouvies() {
   return (
@@ -6,19 +6,19 @@ export default function Mouvies() {
       <Container>
         <Image src={MouviesImg} alt="MouviesImg" />
         <ContainerLink>
-          <button>
+          <Button>
             <Link
               href="https://homeworkfivegrouptwotrounova.netlify.app/"
               target="_blanc"
             >
               Link to site
             </Link>
-          </button>
+          </Button>
         </ContainerLink>
-        <h3>
+        <Heder>
           React Router and code splitting. Redux basics. Redux
           Toolkit.RestApi.Hooks.
-        </h3>
+        </Heder>
       </Container>
     </>
   );

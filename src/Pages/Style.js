@@ -1,15 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  // overflow: hidden;
-  // padding: 30px;
-  // margin-right: auto;
-  // margin-left: auto;
-  // width: 300px;
-  // font-family: Quicksand, arial, sans-serif;
-  // box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
-  // border-radius: 5px;
-  // overflow-style: none;
+  margin-top: 20px;
+  padding-top: 20px;
 `;
 
 export const Image = styled.img`
@@ -18,6 +11,27 @@ export const Image = styled.img`
   margin-right: auto;
   margin-left: auto;
   border: 2px solid #64694b;
+  @media (min-width: 768px) {
+    width: 300px;
+  } ;
+`;
+export const Heder = styled.h3`
+  @media (min-width: 768px) {
+    padding: 0 50px 50px 50px;
+  } ;
+`;
+export const Button = styled.button`
+  color: palevioletred;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid #a2a593;
+  border-radius: 3px;
+`;
+export const ContainerImg = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+  } ;
 `;
 export const ContainerLink = styled.div`
   margin-top: 20px;
