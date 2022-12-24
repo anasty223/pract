@@ -39,12 +39,15 @@ const HomePage = () => {
         <ContainerAditional>
           <ContainerLang>
             <List>
+            
+
+
               <Header>Language skills</Header>
               <ItemLang>
-                <HeaderLang>English:</HeaderLang> A2
+                <HeaderLang>English:</HeaderLang> Pre-intermediate(A2)
               </ItemLang>
               <ItemLang>
-                <HeaderLang>French:</HeaderLang> C1-C2
+                <HeaderLang>French:</HeaderLang> Advanced(C1-C2)
               </ItemLang>
               <ItemLang>
                 <HeaderLang>Ukrainian:</HeaderLang> native

@@ -11,7 +11,8 @@ const Projects = () => {
       <SuperLink to="mouvies">Mouvies </SuperLink>|
       <SuperLink to="images-finder">Images finder </SuperLink>|
       <SuperLink to="phonebook">PhoneBook</SuperLink>|
-      <SuperLink to="kapusta">Kapusta</SuperLink>
+      <SuperLink to="kapusta">Kapusta</SuperLink>|
+      <SuperLink to="social-media">Social media</SuperLink>
       <Outlet />
     </Container>
   );

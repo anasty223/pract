@@ -23,6 +23,7 @@ export const List = styled.ol`
 export const Item = styled.li`
   font-size: 15px;
   margin-bottom: 10px;
+  font-weight:bold;
   &:last-child {
     margin-bottom: 0;
   }
