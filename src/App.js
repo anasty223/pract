@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route,       HashRouter } from "react-router-dom";
 import HomePage from "./components/HomePage/HomePage";
 import Projects from "./components/Projects/Projects";
 import Layout from "./components/Layout/Layout";
@@ -21,6 +21,7 @@ class App extends React.Component {
     return (
       <div className="App">
         {/* <h1>Anastasya Trunova</h1> */}
+ 
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
