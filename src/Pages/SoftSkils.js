@@ -5,8 +5,13 @@ export default function SoftSkils() {
         <li>Team work</li>
         <li>Creativity</li>
         <li>Good communication</li>
-        <li></li>
-        <li></li>
+        <li>
+
+
+
+Willingness to learn
+</li>
+        <li>Punctual</li>
         <li></li>
         <li></li>
       </ul>

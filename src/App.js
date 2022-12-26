@@ -16,6 +16,7 @@ import Kapusta from "./Pages/Kapusta/Kapusta";
 import Education from "./components/Education/Education";
 import WorkExpirience from "./components/WorkExpirience/WorkExpirience";
 import SocialMedia from "./Pages/SocialMedia/SocailMedia";
+import ChatApp from "./Pages/ChatApp/ChatApp";
 
 class App extends React.Component {
   render() {
@@ -43,6 +44,7 @@ class App extends React.Component {
               <Route path="phonebook" element={<Phonebook />} />
               <Route path="kapusta" element={<Kapusta />} />
               <Route path="social-media" element={<SocialMedia />} />
+              <Route path="chatApp" element={<ChatApp />} />
             </Route>
             <Route path="education" element={<Education />} />
             <Route path="workexpirience" element={<WorkExpirience />} />

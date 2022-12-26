@@ -12,7 +12,8 @@ const Projects = () => {
       <SuperLink to="images-finder">Images finder </SuperLink>|
       <SuperLink to="phonebook">PhoneBook</SuperLink>|
       <SuperLink to="kapusta">Kapusta</SuperLink>|
-      <SuperLink to="social-media">Social media</SuperLink>
+      <SuperLink to="social-media">Social media</SuperLink>|
+      <SuperLink to="chatApp">Chat Application</SuperLink>
       <Outlet />
     </Container>
   );
