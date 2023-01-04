@@ -16,12 +16,12 @@ export default function ChatApp() {
           <Heder>
           Description: application for communication
           </Heder>
-          <Image src={chat} alt="Filmoteka" />
+          <Image src={chat} alt="chat" />
         </ContainerImg>
         <ContainerLink>
           <Button>
             <Link
-              href="https://chatapptru.netlify.app/"
+              href="https://realtimchattrunova.netlify.app/"
               target="_blank"
             >
               Link to site
