@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   margin-top: 20px;
   padding-top: 20px;
+  
 `;
 
 export const Image = styled.img`
@@ -14,6 +15,8 @@ export const Image = styled.img`
   @media (min-width: 768px) {
     width: 300px;
   } ;
+
+ 
 `;
 
 
@@ -26,9 +29,11 @@ margin-left: auto;
 border: 2px solid #64694b;
 @media (min-width: 768px) {
   width: 300px;
+ 
 
-  
 } ;
+
+
 `
 export const Heder = styled.h3`
   @media (min-width: 768px) {
@@ -39,6 +44,7 @@ export const Button = styled.button`
   color: palevioletred;
   font-size: 1em;
   margin: 1em;
+  cursor: 'pointer',
   padding: 0.25em 1em;
   border: 2px solid #a2a593;
   border-radius: 3px;

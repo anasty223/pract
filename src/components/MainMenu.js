@@ -49,6 +49,11 @@ const MainMenu = () => {
       <Navbar>
         <HamburgerButton />
         <Container>
+
+
+
+
+          
           <h1>Anastasya Trunova</h1>
           {/* <Link href="tel:+380937657086">
             <BsTelephoneFill width="25px" heigt="25px" />
