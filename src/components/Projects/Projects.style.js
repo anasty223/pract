@@ -15,12 +15,14 @@ export const Container = styled.div`
   overflow-style: none;
   @media (min-width: 768px) {
     width: 720px;
+    display: flex;
+    flex-wrap: wrap;
   } ;
 `;
 
 export const SuperLink = styled(NavLink)`
   max-width: 100%;
-
+  width: calc(100% / 6);
   color: #1e1f16;
   text-decoration: none;
   padding: 10px;

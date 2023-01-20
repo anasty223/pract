@@ -4,7 +4,7 @@ import { Image, Container, Link, ContainerLink, Button, Heder } from "../Style";
 export default function WebStudio() {
   return (
     <>
-      <Container>
+ <Container>
         <Image src={WebStudioImg} alt="WebStudio" />
         <ContainerLink>
           <Button>

@@ -49,6 +49,7 @@ class App extends React.Component {
               <Route path="ticTac" element={<TicTacToe/>} />
             </Route>
             <Route path="education" element={<Education />} />
+          
             <Route path="workexpirience" element={<WorkExpirience />} />
           </Route>
         </Routes>

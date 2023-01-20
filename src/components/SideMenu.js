@@ -72,6 +72,7 @@ SideMenu.defaultProps = {
       <SuperLink to="/education">Education</SuperLink>
 
       <SuperLink to="/workexpirience">Work expirience</SuperLink>
+
     </>
   ),
 };

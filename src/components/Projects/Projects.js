@@ -2,9 +2,10 @@ import { Outlet, NavLink, useLocation } from "react-router-dom";
 import { Container, SuperLink } from "./Projects.style";
 
 const Projects = () => {
-  return (
+  return (<>
+       <h2>My projects</h2>
     <Container>
-      <h2>My projects</h2>
+ 
       <SuperLink to="webstudio">WebStudio</SuperLink>|
       <SuperLink to="ice-cream">Ice Cream </SuperLink>|
       <SuperLink to="filmoteka">Filmoteka </SuperLink>|
@@ -17,6 +18,7 @@ const Projects = () => {
       <SuperLink to="ticTac">Tic-Tac-Toe with chat App</SuperLink>
       <Outlet />
     </Container>
+    </>
   );
 };
 
