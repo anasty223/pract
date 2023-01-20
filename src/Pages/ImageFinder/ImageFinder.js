@@ -1,22 +1,30 @@
-import ImageFinderImg from "../../Images/ImageFinder.jpg";
-import { Image, Container, Link, ContainerLink, Button, Heder } from "../Style";
+import mouvies_ads from "../../Images/mouvies_ads.jpg";
+import mouvies_ads2 from "../../Images/mouvies_ads2.jpg";
+import mouvies_ads3 from "../../Images/mouvies_ads3.jpg";
+import { Image, Container, Link, ContainerLink, Button, Heder, ContainerImg } from "../Style";
 
 export default function ImageFinder() {
   return (
     <>
       <Container>
-        <Image src={ImageFinderImg} alt="ImageFinderImg" />
+      <ContainerImg>
+      <div className="containerImg"> 
+        <Image src={mouvies_ads} alt="ImageFinderImg" />
+        <Image src={mouvies_ads2} alt="ImageFinderImg" />
+        <Image src={mouvies_ads3} alt="ImageFinderImg" />
+</div>
+        </ContainerImg>
         <ContainerLink>
           <Button>
             <Link
-              href="https://anasty223.github.io/goit-react-hw-04-hooks-images_42/"
+              href="https://anasty223.github.io/justice_league_html-css/"
               target="_blanc"
             >
               Link to site
             </Link>
           </Button>
         </ContainerLink>
-        <Heder>React basic. RestApi. Hooks.</Heder>
+        <Heder>HTML/CSS, Positions, Grid, Flex, Gradients</Heder>
       </Container>
     </>
   );

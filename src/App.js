@@ -39,7 +39,7 @@ class App extends React.Component {
             <Route path="projects/:id" element={<Projects />}>
               <Route path="webstudio" element={<WebStudio />} />
               <Route path="ice-cream" element={<IceCream />} />
-              <Route path="images-finder" element={<ImageFinder />} />
+              <Route path="movie_ads" element={<ImageFinder />} />
               <Route path="filmoteka" element={<Filmoteka />} />
               <Route path="mouvies" element={<Mouvies />} />
               <Route path="phonebook" element={<Phonebook />} />
