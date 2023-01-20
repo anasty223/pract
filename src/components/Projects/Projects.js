@@ -13,7 +13,8 @@ const Projects = () => {
       <SuperLink to="phonebook">PhoneBook</SuperLink>|
       <SuperLink to="kapusta">Kapusta</SuperLink>|
       <SuperLink to="social-media">Social media</SuperLink>|
-      <SuperLink to="chatApp">Chat Application</SuperLink>
+      <SuperLink to="chatApp">Chat Application</SuperLink>|
+      <SuperLink to="ticTac">Tic-Tac-Toe with chat App</SuperLink>
       <Outlet />
     </Container>
   );

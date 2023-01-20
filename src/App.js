@@ -17,6 +17,7 @@ import Education from "./components/Education/Education";
 import WorkExpirience from "./components/WorkExpirience/WorkExpirience";
 import SocialMedia from "./Pages/SocialMedia/SocailMedia";
 import ChatApp from "./Pages/ChatApp/ChatApp";
+import TicTacToe from "./Pages/TicTacToe/TicTacToe";
 
 class App extends React.Component {
   render() {
@@ -45,6 +46,7 @@ class App extends React.Component {
               <Route path="kapusta" element={<Kapusta />} />
               <Route path="social-media" element={<SocialMedia />} />
               <Route path="chatApp" element={<ChatApp />} />
+              <Route path="ticTac" element={<TicTacToe/>} />
             </Route>
             <Route path="education" element={<Education />} />
             <Route path="workexpirience" element={<WorkExpirience />} />

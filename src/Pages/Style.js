@@ -15,6 +15,21 @@ export const Image = styled.img`
     width: 300px;
   } ;
 `;
+
+
+export const ImageTic=styled.img`
+
+margin-top: 20px;
+width: 100px;
+margin-right: auto;
+margin-left: auto;
+border: 2px solid #64694b;
+@media (min-width: 768px) {
+  width: 300px;
+
+  
+} ;
+`
 export const Heder = styled.h3`
   @media (min-width: 768px) {
     padding: 0 50px 50px 50px;

@@ -36,5 +36,14 @@
     transform: rotate(360deg);
   }
 }
-
-
+.listOfTicTac{
+  text-align: start;
+  list-style:upper-roman;
+}
+.containerImg{
+ display: flex;
+ flex-wrap: wrap;
+}
+.imgT{
+  width: calc(100% / 2);
+}
