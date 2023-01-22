@@ -18,6 +18,7 @@ import WorkExpirience from "./components/WorkExpirience/WorkExpirience";
 import SocialMedia from "./Pages/SocialMedia/SocailMedia";
 import ChatApp from "./Pages/ChatApp/ChatApp";
 import TicTacToe from "./Pages/TicTacToe/TicTacToe";
+import ShoppingCartApp from "./Pages/ShoppingCartApp.js/ShoppingCartApp";
 
 class App extends React.Component {
   render() {
@@ -47,6 +48,7 @@ class App extends React.Component {
               <Route path="social-media" element={<SocialMedia />} />
               <Route path="chatApp" element={<ChatApp />} />
               <Route path="ticTac" element={<TicTacToe/>} />
+              <Route path="shoppingCartApp" element={<ShoppingCartApp/>} />
             </Route>
             <Route path="education" element={<Education />} />
           

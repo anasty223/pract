@@ -16,6 +16,7 @@ const Projects = () => {
       <SuperLink to="social-media">Social media</SuperLink>|
       <SuperLink to="chatApp">Chat Application</SuperLink>|
       <SuperLink to="ticTac">Tic-Tac-Toe with chat App</SuperLink>
+      <SuperLink to="shoppingCartApp">Shopping Cart App</SuperLink>
       <Outlet />
     </Container>
     </>
