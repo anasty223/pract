@@ -11,9 +11,9 @@ import {
 export default function IceCream() {
   return (
     <>
-      <Container>
+      <Container> <Heder> Ice Cream company site</Heder>
         <ContainerImg>
-          <Heder> Ice Cream company site</Heder>
+         
           <Image src={IceCreamImage} alt="IceCreamImage" />
         </ContainerImg>
         <ContainerLink>

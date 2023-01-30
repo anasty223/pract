@@ -25,11 +25,14 @@ export const List = styled.ul`
   } ;
 `;
 export const Item = styled.li`
+font-family: "Paytone One";
+color: #a2a593;
+box-shadow:-1px 1px 4px 0px;
   font-size: 15px;
   display:flex;
   align-items:center;
   justify-content:space-around;
-  border-bottom:2px solid #a2a593;
+  border-bottom:2px solid #64694b;
   margin-bottom: 10px;
   &:last-child {
     margin-bottom: 0;

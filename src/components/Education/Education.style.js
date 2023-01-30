@@ -21,6 +21,7 @@ export const List = styled.ol`
   text-align: start;
 `;
 export const Item = styled.li`
+font-family: "Paytone One";
   font-size: 15px;
   margin-bottom: 10px;
   font-weight:bold;

@@ -12,6 +12,9 @@ export const Image = styled.img`
   margin-right: auto;
   margin-left: auto;
   border: 2px solid #64694b;
+
+
+  
   @media (min-width: 768px) {
     width: 300px;
   } ;
@@ -36,18 +39,27 @@ border: 2px solid #64694b;
 
 `
 export const Heder = styled.h3`
+font-family: "Paytone One";
   @media (min-width: 768px) {
-    padding: 0 50px 50px 50px;
+    padding: 0 50px 0px 50px;
   } ;
 `;
 export const Button = styled.button`
-  color: palevioletred;
-  font-size: 1em;
+font-family: "Paytone One";
+  color: white;
+  font-size: 25px;
   margin: 1em;
   cursor: 'pointer',
   padding: 0.25em 1em;
-  border: 2px solid #a2a593;
+
   border-radius: 3px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
 `;
 export const ContainerImg = styled.div`
   @media (min-width: 768px) {
@@ -59,6 +71,6 @@ export const ContainerLink = styled.div`
 `;
 export const Link = styled.a`
   font-weight: bold;
-  color: #64694b;
+  color: #ffffff;
   text-decoration: none;
 `;

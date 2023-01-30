@@ -11,12 +11,12 @@ import FilmotekaImg from "../../Images/Filmoteka.jpg";
 export default function Filmoteka() {
   return (
     <>
-      <Container>
-        <ContainerImg>
-          <Heder>
+      <Container>  <Heder>
             Project about searching movies, and adding favorite movies to a
             client personal library. Using pure JS, npm-packages and SCSS
           </Heder>
+        <ContainerImg>
+        
           <Image src={FilmotekaImg} alt="Filmoteka" />
         </ContainerImg>
         <ContainerLink>
@@ -30,7 +30,7 @@ export default function Filmoteka() {
           </Button>
         </ContainerLink>
         <Heder>
-          [HTML, SASS, JS, Handlebars, REST API, AJAX, Parcel] Arrays and
+          HTML, SASS, JS, Handlebars, REST API, AJAX, Parcel Arrays and
           functions Objects. Rest and spread operations.Array iterative methods.
           Prototypes and classes. Web storage. Interaction with the backend
         </Heder>

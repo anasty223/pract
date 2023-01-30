@@ -14,16 +14,18 @@ export const Container = styled.div`
   border-radius: 5px;
   overflow-style: none;
   @media (min-width: 768px) {
-    width: 720px;
+    width:950px;
     display: flex;
+    justify-content:center; 
     flex-wrap: wrap;
   } ;
 `;
-
 export const SuperLink = styled(NavLink)`
+
+font-family: "Paytone One";
   max-width: 100%;
-  width: calc(100% / 6);
-  color: #1e1f16;
+  width: calc(100% / 3);
+  color: #ffffff;
   text-decoration: none;
   padding: 10px;
   font-weight: bold;

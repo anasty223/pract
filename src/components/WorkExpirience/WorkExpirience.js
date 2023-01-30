@@ -6,23 +6,23 @@ export default function WorkExpirience() {
       <Container>
         <List>
           <Item>
-            <h2>Floral Designer</h2>
+            <h3>Floral Designer</h3>
             <p>kvituchi 2018 - 2021 Kyev</p>
           </Item>
           <Item>
-            <h2>Designer florale</h2>
+            <h3>Designer florale</h3>
             <p>FanFan tulpan 2015 - 2017 Kyev</p>
           </Item>
           <Item>
-            <h2>Floral Designer</h2>
+            <h3>Floral Designer</h3>
             <p>Kiosk a fleurs 2015 Paris</p>
           </Item>
           <Item>
-            <h2>Florist</h2>
+            <h3>Florist</h3>
             <p>ITIS Gallery 2011 - 2014</p>
           </Item>
           <Item>
-            <h2>French technical translator</h2>
+            <h3>French technical translator</h3>
             <p>Ouest Metal Industrie 2008 - 2010</p>
           </Item>
         </List>

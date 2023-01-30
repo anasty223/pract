@@ -11,11 +11,11 @@ import social from "../../Images/social.jpg";
 export default function SocialMedia() {
   return (
     <>
-      <Container>
-        <ContainerImg>
-          <Heder>
+      <Container>  <Heder>
           Web application with posts list
           </Heder>
+        <ContainerImg>
+        
           <Image src={social} alt="social" />
         </ContainerImg>
         <ContainerLink>

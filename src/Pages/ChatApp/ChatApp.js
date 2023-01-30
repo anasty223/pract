@@ -12,10 +12,11 @@ export default function ChatApp() {
   return (
     <>
       <Container>
-        <ContainerImg>
-          <Heder>
+      <Heder>
           Description: application for communication
           </Heder>
+        <ContainerImg>
+ 
           <Image src={chat} alt="chat" />
         </ContainerImg>
         <ContainerLink>

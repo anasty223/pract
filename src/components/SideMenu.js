@@ -9,7 +9,7 @@ const Menu = styled.nav`
   left: 0px;
   z-index: 293;
   display: block;
-  width: 220px;
+  width: 240px;
   height: 100vh;
   max-width: 100%;
   margin-top: 0px;
@@ -35,22 +35,36 @@ const Menu = styled.nav`
 export const SuperLink = styled(NavLink)`
   position: relative;
   display: inline-block;
-  display: block;
   max-width: 100%;
   padding-left: 10%;
   background-repeat: no-repeat;
   transition: background-position 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
   text-decoration: none;
-  padding: 12px;
   font-weight: 500;
-  color: #ffffff;
+
   font-size: 20px;
   &.active {
     color: #64694b;
-    text-decoration: underline;
-    font-size: 25px;
+
+    border-bottom: 2px solid white;
+    font-size: 35px;
   }
+`;
+const HeaderNav = styled.h2`
+  font-family: "Paytone One";
+  color: #202020;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+`;
+const SpanNav = styled.span`
+  display: block;
+  margin: 11px 0 0px 0;
+  font-size: 35px;
+  line-height: 35px;
+  color: #64694b;
+  text-shadow: 0 13.36px 8.896px #64694b, 0 -2px 1px #fff;
+  letter-spacing: -4px;
 `;
 export const SideMenu = ({ children }) => {
   const { isMenuOpen } = useContext(MenuContext);
@@ -65,14 +79,33 @@ SideMenu.propTypes = {
 SideMenu.defaultProps = {
   children: (
     <>
-      <SuperLink to="/home">Home</SuperLink>
+      <SuperLink to="/home">
+        <HeaderNav>
+     
+          <SpanNav>Home</SpanNav>
+        </HeaderNav>
+      </SuperLink>
 
-      <SuperLink to="/projects">Projects</SuperLink>
+      <SuperLink to="/projects">
+        <HeaderNav>
+   
+          <SpanNav>Projects</SpanNav>
+        </HeaderNav>
+      </SuperLink>
 
-      <SuperLink to="/education">Education</SuperLink>
+      <SuperLink to="/education">
+        <HeaderNav>
+    
+          <SpanNav>Education</SpanNav>
+        </HeaderNav>
+      </SuperLink>
 
-      <SuperLink to="/workexpirience">Work expirience</SuperLink>
-
+      <SuperLink to="/workexpirience">
+        <HeaderNav>
+    
+          <SpanNav>Work expirience</SpanNav>
+        </HeaderNav>
+      </SuperLink>
     </>
   ),
 };

@@ -22,14 +22,15 @@ export const ContainerTablet = styled.div`
   } ;
 `;
 export const Image = styled.img`
-  width: 210px;
+  width: 150px;
   display: block;
-  border-radius: 30%;
+  border:3px solid #e0e1db;
+  box-shadow:11px 8px 20px 0px;;
   margin-right: auto;
   margin-left: auto;
   @media (min-width: 768px) {
-    border-radius: 50%;
-    border: 2px solid #e0e1db;
+
+ 
   } ;
 `;
 export const Container = styled.div`
@@ -37,13 +38,15 @@ export const Container = styled.div`
   width: 900px;
 `;
 export const Letter = styled.h3`
+font-family: "Paytone One";
   fon-size: 30px;
   border-bottom: 2px solid #e0e1db;
   text-align: start;
   padding-bottom: 20px;
   @media (min-width: 768px) {
-    text-align: center;
+    fon-size: 50px;
     padding: 25px;
+
   } ;
 `;
 export const List = styled.ul`
@@ -52,13 +55,16 @@ export const List = styled.ul`
   padding-bottom: 20px;
   @media (min-width: 768px) {
     border: none;
+
   } ;
 `;
 export const HeaderLang = styled.span`
   fon-size: 30px;
+  font-family: "Paytone One";
 `;
 export const ItemLang = styled.li`
   margin-bottom: 10px;
+  font-family: "Paytone One"3
   &:last-child {
     margin-bottom: 0;
   }
@@ -68,17 +74,21 @@ export const ContainerAditional = styled.div`
   display: block;
 `;
 export const ContainerLang = styled.div`
+font-family: "Paytone One";
  @media (min-width: 768px) {
     display: flex;
     justify-content:space-around;
     border-bottom:2px solid #e0e1db;
+    margin-top:20px;
   } ;
 }`;
 export const Header = styled.h2`
+font-family: "Paytone One";
   color: maroon;
   text-transform: uppercase;
 `;
 export const Contacts = styled.a`
+font-family: "Paytone One";
   color: #64694b;
   margin-left: 5px;
   &:hover,
@@ -97,6 +107,7 @@ export const ListContacts = styled.li`
 `;
 
 export const ListContact = styled.ul`
+font-family: "Paytone One";
   border-bottom: 2px solid #e0e1db;
   text-align: start;
   padding-bottom: 20px;
@@ -137,7 +148,8 @@ export const Linktech = styled(NavLink)`
 `;
 export const ItemTech = styled.li`
   margin-bottom: 10px;
-  xt-align: start;
+  text-align: start;
+  font-family: "Paytone One";
 
   &:hover,
   :focus {

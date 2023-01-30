@@ -138,17 +138,63 @@ left: 0;
  }
 
 
+ button {
+	width: 180px;
+	height: 70px;
 
+	cursor: pointer;
+	background: #a2a593;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 10px 25px #7e8368b8, 0px -10px 25px #7e8368, inset 0px -5px 10px #7e8368b8, inset 0px 5px 10px #64694b;
+	font-family: 'Damion', cursive;
+	color: white;
 
-
-
-/* .header{
-  background:url('https://farm9.staticflickr.com/8760/17195790401_ceeeafcddb_o.jpg');
-  background-size:cover;
-  font-family: 'Cabin Condensed', sans-serif;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+	transition: 500ms;
 }
-svg{font-weight:bold;max-width:600px;height:auto;} */
+
+button:hover {
+		border: 2px solid #64694b;
+	animation: hueRotation 2s linear infinite;
+}
+
+@keyframes hueRotation {
+	to {filter: hue-rotate(360deg);}
+}
+
+button:focus {
+	outline: none;
+}
+
+
+.noselect{
+  font-size:20px;
+  -webkit-touch-callout: none;
+-webkit-user-select: none;
+ -khtml-user-select: none;
+   -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+-webkit-tap-highlight-color: transparent;
+margin: 20px;
+}
+h2 {
+  /* margin: 20px; */
+  font-family: "Paytone One";
+  color: #202020;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+h2 span {
+  display: block;
+  margin: 11px 0 17px 0;
+  font-size: 80px;
+  line-height: 80px;
+  color: #64694b;
+  text-shadow: 0 13.36px 8.896px #64694b,0 -2px 1px #fff;
+  letter-spacing: -4px;
+}
+.linkPhone{
+  color: #fff;
+}
