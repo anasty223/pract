@@ -19,6 +19,7 @@ import SocialMedia from "./Pages/SocialMedia/SocailMedia";
 import ChatApp from "./Pages/ChatApp/ChatApp";
 import TicTacToe from "./Pages/TicTacToe/TicTacToe";
 import ShoppingCartApp from "./Pages/ShoppingCartApp.js/ShoppingCartApp";
+import Calendar from "./Pages/Calendar/Calendar";
 
 class App extends React.Component {
   render() {
@@ -49,6 +50,7 @@ class App extends React.Component {
               <Route path="chatApp" element={<ChatApp />} />
               <Route path="ticTac" element={<TicTacToe/>} />
               <Route path="shoppingCartApp" element={<ShoppingCartApp/>} />
+              <Route path="calendar" element={<Calendar/>} />
             </Route>
             <Route path="education" element={<Education />} />
           
