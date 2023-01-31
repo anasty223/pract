@@ -24,7 +24,7 @@ export default function ImageFinder() {
             </Link>
           </Button>
         </ContainerLink>
-        <Heder>HTML/SASS, Positions, Grid, Flex, Gradients</Heder>
+        <Heder>HTML/CSS, Positions, Grid, Flex, Gradients</Heder>
       </Container>
     </>
   );
